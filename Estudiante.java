@@ -1,5 +1,3 @@
-package com.cursos_online.entidades;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,6 +11,7 @@ public class Estudiante {
 	private int id;
 	private String nombre;
 	private String apellido;
+	
 	
 	
 	public Estudiante(int id, String nombre, String apellido) {
@@ -41,6 +40,11 @@ public class Estudiante {
 	}
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
+	}
+	
+	@Override
+	public String toString() {
+		return "Estudiante [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + "]";
 	}
 	
 	
